@@ -1,0 +1,63 @@
+﻿@model IEnumerable<KD12NTierApp.Entities.Concrete.Person>
+
+@{
+    ViewData["Title"] = "KisileriGetir";
+}
+
+<h1>KisileriGetir</h1>
+
+<h1>@ViewBag.BosListe</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Surname
+            </th>
+            <th>
+                TcNo
+            </th>
+            <th>
+                Status
+            </th>
+            <th>
+                CreatedBy
+            </th>
+            <th>
+                CreatedDate
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @item.Id
+            </td>
+            <td>
+                @item.Name
+            </td>
+            <td>
+                @item.Surname
+            </td>
+            <td>
+                @item.TcNo
+            </td>
+            <td>
+                @item.Status
+            </td>
+            <td>
+                @item.CreatedBy
+            </td>
+            <td>
+                @item.CreatedDate
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

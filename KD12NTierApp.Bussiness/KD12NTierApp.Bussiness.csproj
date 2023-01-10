@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KD12NTierApp.DataAccess\KD12NTierApp.DataAccess.csproj" />
+    <ProjectReference Include="..\KD12NTierApp.Entities\KD12NTierApp.Entities.csproj" />
+  </ItemGroup>
+
+</Project>
